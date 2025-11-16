@@ -1,0 +1,200 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002366;
+  padding: 20px 80px;
+}
+
+.navbar_h1 {
+  color: white;
+}
+
+.navbar_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+
+nav {
+  display: flex;
+  column-gap: 50px;
+}
+
+.navlink {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.logOut_btn {
+  background-color: white;
+  border: none;
+  border-radius: 7px;
+  box-shadow:
+    rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  color: #002366;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 6px 20px;
+}
+
+@media (max-width: 1024px) {
+  .navbar_h1 {
+    font-size: 28px;
+  }
+
+  .navlink {
+    font-size: 24px;
+  }
+
+  .logOut_btn {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 950px) {
+  header {
+    padding: 20px 50px;
+  }
+
+  .navbar_div {
+    column-gap: 30px;
+  }
+
+  nav {
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 769px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  .navbar_h1 {
+    font-size: 24px;
+  }
+
+  .navlink {
+    font-size: 20px;
+  }
+
+  .logOut_btn {
+    font-size: 15px;
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 20px 20px;
+  }
+
+  .navbar_h1 {
+    font-size: 20px;
+  }
+
+  .navlink {
+    font-size: 18px;
+  }
+
+  .logOut_btn {
+    font-size: 14px;
+    padding: 4px 12px;
+  }
+}
+
+@media (max-width: 585px) {
+  header {
+    padding: 20px 15px;
+  }
+
+  .navbar_h1 {
+    font-size: 18px;
+  }
+
+  .navbar_div {
+    column-gap: 20px;
+  }
+
+  nav {
+    column-gap: 20px;
+  }
+
+  .navlink {
+    font-size: 16px;
+  }
+
+  .logOut_btn {
+    font-size: 14px;
+    padding: 2px 8px;
+  }
+}
+
+@media (max-width: 460px) {
+  .navbar_h1 {
+    font-size: 16px;
+  }
+
+  .navbar_div {
+    column-gap: 15px;
+  }
+
+  nav {
+    column-gap: 15px;
+  }
+
+  .navlink {
+    font-size: 14px;
+  }
+
+  .logOut_btn {
+    font-size: 14px;
+    padding: 2px 6px;
+  }
+}
+
+@media (max-width: 410px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  .navbar_h1 {
+    font-size: 14px;
+    /* font-weight: 500; */
+  }
+
+  .navbar_div {
+    column-gap: 10px;
+  }
+
+  nav {
+    column-gap: 10px;
+  }
+
+  .logOut_btn {
+    font-size: 14px;
+    padding: 2px;
+  }
+}
+
+@media (max-width: 350px) {
+  header {
+    padding: 20px 5px;
+  }
+
+  .navbar_h1 {
+    font-weight: 500;
+  }
+
+  .navbar_div {
+    column-gap: 7px;
+  }
+
+  nav {
+    column-gap: 7px;
+  }
+}

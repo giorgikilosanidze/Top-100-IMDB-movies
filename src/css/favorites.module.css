@@ -1,0 +1,32 @@
+.favorites_h2 {
+  font-size: 34px;
+  color: white;
+  margin: 26px 0;
+}
+
+.favorites_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  margin-bottom: 30px;
+}
+
+.favorites_empty {
+  margin: auto;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+@media (max-width: 769px) {
+  .favorites_h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .favorites_h2 {
+    font-size: 24px;
+  }
+}
