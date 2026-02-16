@@ -2,7 +2,7 @@ export async function fetchMovies() {
   const resp = await fetch(`https://imdb-top-100-movies.p.rapidapi.com/`, {
     method: "GET",
     headers: {
-      "x-rapidapi-key": process.env.IMDB_API_KEY,
+      "x-rapidapi-key": process.env.REACT_APP_IMDB_API_KEY,
       "x-rapidapi-host": "imdb-top-100-movies.p.rapidapi.com",
     },
   });
@@ -22,7 +22,7 @@ export async function fetchMovieDetails(movieId) {
       {
         method: "GET",
         headers: {
-          "x-rapidapi-key": process.env.IMDB_API_KEY,
+          "x-rapidapi-key": process.env.REACT_APP_IMDB_API_KEY,
           "x-rapidapi-host": "imdb-top-100-movies.p.rapidapi.com",
         },
       },

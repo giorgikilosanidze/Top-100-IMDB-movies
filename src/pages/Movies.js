@@ -50,7 +50,27 @@ const Movies = () => {
   return (
     <div>
       <h2 className={styles.movies_h2}>Movies</h2>
-      {state.isMoviesDataLoading && <BeatLoader color="#36d7b7" />}
+      {state.isMoviesDataLoading && (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            margin: "40px 0",
+          }}
+        >
+          <BeatLoader color="#6366f1" />
+          <p
+            style={{
+              marginTop: "12px",
+              color: "#6366f1",
+              fontWeight: "600",
+            }}
+          >
+            Fetching movies, please wait...
+          </p>
+        </div>
+      )}
       <Slider />
       <div className={styles.movies_div}>
         {currentPosts.map((movie) => (

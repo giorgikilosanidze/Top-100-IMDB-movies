@@ -11,7 +11,7 @@ import { BeatLoader } from "react-spinners";
 import styles from "../css/details.module.css";
 
 const DetailsPage = () => {
-  const params = useParams(); // am paramss sad da rogor ikenebs mere videoshi vnaxo. hahahahahahahahaha
+  const params = useParams();
   const { state, dispatch } = useMoviesContext();
   const { movieDetails } = state;
   const genres = movieDetails.genre?.join(", ");

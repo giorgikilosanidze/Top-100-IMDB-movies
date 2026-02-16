@@ -96,7 +96,27 @@ const SignUpForm = () => {
       </button>
 
       {error && <h2>{error}</h2>}
-      {isLoading && <BeatLoader color="#36d7b7" />}
+      {isLoading && (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            marginTop: "20px",
+          }}
+        >
+          <BeatLoader color="#6366f1" />
+          <p
+            style={{
+              marginTop: "10px",
+              color: "#6366f1",
+              fontWeight: "500",
+            }}
+          >
+            Server is waking up, please wait...
+          </p>
+        </div>
+      )}
     </form>
   );
 };
