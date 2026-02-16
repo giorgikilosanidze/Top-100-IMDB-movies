@@ -26,6 +26,8 @@
   min-height: 56px; /* Ensure alignment */
   display: flex;
   align-items: flex-start;
+  justify-content: center;
+  text-align: center;
 }
 
 .movies_h3 {
@@ -34,6 +36,7 @@
   color: var(--text-main);
   line-height: 1.4;
   margin: 0;
+  text-align: center;
 }
 
 .movie_cards {
@@ -65,9 +68,11 @@ img {
 .movies_description_div {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
   margin-bottom: 20px;
   flex-grow: 1;
+  text-align: center;
 }
 
 .movie_p_tags {
@@ -80,6 +85,7 @@ img {
 .genres_div {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
   margin-bottom: 16px;
 }
