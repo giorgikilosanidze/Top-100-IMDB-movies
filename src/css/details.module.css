@@ -9,6 +9,7 @@
 .details_div {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 48px;
   margin: 0 auto 60px;
   max-width: 1200px;
@@ -16,14 +17,14 @@
 }
 
 .details_img {
+  flex: 3;
+  min-width: 0;
   width: 100%;
-  max-width: 350px;
   height: auto;
   aspect-ratio: 2/3;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--shadow-lg);
-  flex-shrink: 0;
 }
 
 .movie_details_div {
@@ -40,7 +41,7 @@
 
 .details_img2 {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   height: auto;
   border-radius: var(--radius);
   margin-bottom: 24px;
@@ -61,12 +62,12 @@
 }
 
 iframe {
-  width: 80%;
+  flex: 8;
+  min-width: 0;
   aspect-ratio: 16/9;
   height: auto;
   border: none;
   border-radius: var(--radius);
-  margin-top: 24px;
   box-shadow: var(--shadow-md);
 }
 
@@ -84,7 +85,7 @@ iframe {
   text-align: center;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1450px) and (min-width: 1025px) {
   .details_div {
     gap: 32px;
     max-width: 95%;
@@ -104,6 +105,12 @@ iframe {
 
   .details_img2 {
     display: block; /* Show secondary image */
+  }
+
+  iframe {
+    flex: none;
+    width: 100%;
+    max-width: 500px;
   }
 
   .movie_details_div {
